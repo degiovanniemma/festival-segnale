@@ -220,3 +220,27 @@ h3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+.luoghi-swiper {
+  max-width: 42rem;
+  margin: 1.5rem auto;
+}
+
+.luoghi-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+#mappa-sedi {
+  display: block;
+  width: 100%;
+  height: 28rem;
+  border: 0;
+}
+.swiper-button-prev:focus-visible,
+.swiper-button-next:focus-visible {
+  outline: 3px solid var(--colore-testo);
+  outline-offset: 4px;
+}
+
+
