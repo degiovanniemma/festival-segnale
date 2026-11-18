@@ -3,13 +3,16 @@
 
 /* Scelte comuni: ogni regola usa var() per richiamarne il valore. */
 :root {
-  --colore-primario: #245c49;
-  --colore-primario-scuro: #173f32;
-  --colore-sfondo: #f5f2e9;
-  --colore-testo: #202923;
+  --colore-primario: #7C8E40;
+  --colore-primario-scuro: #35540B;
+  --colore-sfondo: #F2D4D8;
+  --colore-testo: #000000;
+  --colore-titoli: #740533;
+  --colore-bordo: #7C8E40;
   --font-testo: "Nunito Sans", sans-serif;
   --font-titoli: "Poppins", sans-serif;
 }
+
 
 * {
   box-sizing: border-box;
@@ -92,7 +95,7 @@ nav a[aria-current="page"] {
 
 .eyebrow,
 .event-meta {
-  color: #46564b;
+  color: var(--colore-testo);
   font-size: 0.875rem;
   font-weight: bold;
 }
@@ -280,6 +283,29 @@ h3 {
     padding: 0.1rem 0;
   }
 }
+h1,
+h2,
+h3 {
+  color: var(--colore-titoli);
+}
+
+.eyebrow,
+.event-meta,
+.event-place,
+.site-footer {
+  color: var(--colore-primario-scuro);
+}
+
+.event-card {
+  border-color: var(--colore-bordo);
+  background: #ffffff;
+}
+
+.site-footer {
+  border-top-color: var(--colore-bordo);
+}
+
+
 
 
 
